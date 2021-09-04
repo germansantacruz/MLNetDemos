@@ -1,0 +1,25 @@
+﻿@page "/train"
+@inject HttpClient Http
+
+<h3>Entrenar y guardar modelo</h3>
+<button type="button" @onclick="Train">Train</button>
+<br /><br />
+@message
+
+@code {
+
+    private string message;
+
+    async Task<MLResponse> TrainModelAsync()
+    {
+        message = "";
+        string url = $"api/Sentiment/train";
+        return await Http.GetFromJsonAsync<MLResponse>(url);
+    }
+
+    private async Task Train()
+    {
+        var mlResponse = await TrainModelAsync();
+        message = mlResponse.Message;
+    }
+}

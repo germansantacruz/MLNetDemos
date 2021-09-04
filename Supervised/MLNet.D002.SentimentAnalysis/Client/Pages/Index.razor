@@ -1,0 +1,41 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<p>
+    <textarea cols="45" placeholder="Review" @oninput="UpdateScoreAsync" />
+</p>
+<HappinessScale Percentage="happiness" />
+
+@code {
+    float happiness = 50; // 0=worst, 100=best
+    string sentimentText = string.Empty;
+
+    async Task<float> PredictSentimentAsync(string sentimentText)
+    {
+        string url = $"api/Sentiment/predict?sentimentText={sentimentText}";
+        return await Http.GetFromJsonAsync<float>(url);
+    }
+
+    async Task UpdateScoreAsync(ChangeEventArgs e)
+    {
+        var newValue = ((string)e.Value).Trim();
+        if (newValue.Equals(sentimentText))
+        {
+            return;
+        }
+
+        sentimentText = newValue;
+
+        if (string.IsNullOrEmpty(sentimentText))
+        {
+            happiness = 50;
+        }
+        else
+        {
+            happiness = await PredictSentimentAsync(sentimentText);
+        }
+
+        Console.WriteLine($"Sentiment Text: {sentimentText}");
+        Console.WriteLine($"Percentage: {happiness}");
+    }
+}
