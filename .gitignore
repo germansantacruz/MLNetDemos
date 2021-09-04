@@ -363,6 +363,6 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # My Custom Settings
-Models/*.zip
-Data/*.csv
-Data/*.txt
+*.zip
+*.csv
+*.txt
