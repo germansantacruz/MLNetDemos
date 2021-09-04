@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLNet.D002.SentimentAnalysi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLNet.D002.SentimentAnalysis.Client", "Supervised\MLNet.D002.SentimentAnalysis\Client\MLNet.D002.SentimentAnalysis.Client.csproj", "{44B7034A-6AAE-472F-BE77-61D875F21BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNet.D003.SentimentAnalysis", "Supervised\MLNet.D003.SentimentAnalysis\MLNet.D003.SentimentAnalysis.csproj", "{4B509D04-4A66-4BA4-97FB-483D50A00BB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLNet.D003.SentimentAnalysis", "Supervised\MLNet.D003.SentimentAnalysis\MLNet.D003.SentimentAnalysis.csproj", "{4B509D04-4A66-4BA4-97FB-483D50A00BB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNet.D004.LinearRegression", "Supervised\MLNet.D004.LinearRegression\MLNet.D004.LinearRegression.csproj", "{2E0F2726-E642-42A7-A7D2-4E4F28BC69F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{4B509D04-4A66-4BA4-97FB-483D50A00BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B509D04-4A66-4BA4-97FB-483D50A00BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B509D04-4A66-4BA4-97FB-483D50A00BB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0F2726-E642-42A7-A7D2-4E4F28BC69F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0F2726-E642-42A7-A7D2-4E4F28BC69F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0F2726-E642-42A7-A7D2-4E4F28BC69F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0F2726-E642-42A7-A7D2-4E4F28BC69F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{CB2DF6B0-B9C9-48FC-9E96-5BB0832BB2FD} = {F905A887-1D77-49AE-B1EB-41CB8AE48F36}
 		{44B7034A-6AAE-472F-BE77-61D875F21BAF} = {F905A887-1D77-49AE-B1EB-41CB8AE48F36}
 		{4B509D04-4A66-4BA4-97FB-483D50A00BB4} = {F905A887-1D77-49AE-B1EB-41CB8AE48F36}
+		{2E0F2726-E642-42A7-A7D2-4E4F28BC69F3} = {F905A887-1D77-49AE-B1EB-41CB8AE48F36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B3C435A-B641-46C3-8104-034509A89FB9}
