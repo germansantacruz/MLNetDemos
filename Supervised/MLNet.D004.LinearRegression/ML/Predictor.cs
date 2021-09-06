@@ -39,9 +39,9 @@ namespace MLNet.D004.LinearRegression.ML
             var json = File.ReadAllText(inputDataFile);
             var prediction = predictionEngine.Predict(JsonConvert.DeserializeObject<EmploymentHistory>(json));
 
-            Console.WriteLine($"Based on input json:\n" +
+            Console.WriteLine($"Basado en los datos del archivo json:\n" +
                               $"{json}\n" +
-                              $"The employee is predicted to work {prediction.DurationInMonths:#.##} months");
+                              $"Se estima que el empleado trabajará {prediction.DurationInMonths:#.##} meses.");
         }
     }
 }
